@@ -1,0 +1,105 @@
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: neu;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    position: relative;
+    padding: 0 2vw;
+}
+
+nav {
+    padding: 2vw 2vw;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#nav-part2 h4 {
+    padding:  10px 20px;
+    border: 1px solid #8a8a8a89;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #000000c5;
+    position: relative;
+    transition: all ease 0.4s;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+#nav-part2 h4:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+#nav-part2 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav-part2 h4 a {
+    color: #000000c5;
+    text-decoration: none;
+    z-index: 9;
+    position: relative;
+}
+
+#nav-part2 h4:hover a {
+    color: #fff;
+}
+
+#center {
+    height: 65vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #000000c5;
+    padding-bottom: 2.5vw;
+}
+
+#left h3{
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+
+#center h1 {
+    font-size: 10vw;
+    line-height: 8vw;
+    text-align: right;
+}
+
