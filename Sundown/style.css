@@ -3,6 +3,17 @@
     src: url(./NeueHaasDisplayMediu.ttf);
 }
 
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayLight.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayRoman.ttf);
+    font-weight: 200;
+}
 
 * {
     margin: 0;
@@ -197,7 +208,7 @@ nav h3 {
     white-space: nowrap;
     display: inline-block;
     animation-name: move;
-    animation-duration: 10s;
+    animation-duration: 12s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -222,4 +233,38 @@ nav h3 {
     to{
         transform: translateX(-100%);
     }
+}
+
+#page2-bottom{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7vw;
+    margin-top: 5vw;
+}
+
+#page2-bottom h1{
+    font-size: 4.5vw;
+    width: 60%;
+    line-height: 4vw;
+}
+
+#bottom-part2{
+    width: 24%;
+    margin-top: 16vw;
+    left: 0;
+}
+
+#bottom-part2 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#bottom-part2 p{
+    font-weight: 200;
+    margin-top: 2vw;
+    font-size: 1.2vw;
+    width: 105%;
 }
