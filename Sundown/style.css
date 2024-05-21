@@ -194,6 +194,7 @@ nav h3 {
     width: 100%;
     background-color: #efeae3;
     padding: 8vw 0vw;
+    position: relative;
 }
 
 #moving-text{
@@ -243,6 +244,8 @@ nav h3 {
     justify-content: space-between;
     padding: 7vw;
     margin-top: 5vw;
+    position: relative;
+    z-index: 9;
 }
 
 #page2-bottom h1{
@@ -267,4 +270,100 @@ nav h3 {
     margin-top: 2vw;
     font-size: 1.2vw;
     width: 105%;
+}
+
+#page2 #gooey{
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top right,#fe260a, #fc621a);
+    top: 55%;
+    left: 25%;
+    /* filter: blur(20px); */
+    animation-name: gooey;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes gooey {
+    from{
+        filter: blur(20px);
+        transform: translate(10%, -10%) skew(0);
+    }
+    to{
+        filter: blur(30px);
+        transform: translate(-10%, 10%) skew(-12deg);
+    }
+}
+
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    padding: 4vw 0;
+}
+
+.elem{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 3vw;
+    border-bottom: 1px solid #0000003c;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.elem h2{
+    font-size: 4vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #FF9831;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.2s;
+}
+
+.elem:hover .overlay{
+    top: 0;
+}
+
+.tiny{
+    display: flex;
+    align-items: center;
+    padding-left: 3vw;
+    height: 150px;
+}
+
+.tiny img{
+    height: 9px;
+}
+
+.tiny h3{
+    padding-left: 0.5vw;
+    font-weight: 200;
+    font-size: 1vw;
+}
+
+.brand{
+    position: relative;
+    z-index: 9;
+    text-align: right;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.brand p{
+    color: #00000079;
 }
