@@ -351,9 +351,9 @@ nav h3 {
 }
 
 .tiny h3{
-    padding-left: 0.5vw;
+    padding-left: 1%;
     font-weight: 200;
-    font-size: 1vw;
+    font-size: 100%;
 }
 
 .brand{
@@ -366,4 +366,21 @@ nav h3 {
 
 .brand p{
     color: #00000079;
+}
+
+#elem-container{
+}
+
+#fixed-image{
+    height: 30vw;
+    width: 24vw;
+    background-color: #fe320a;
+    border-radius: 18px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 18%;
+    display: none;
+    background-size: cover;
+    background-position: center;
 }

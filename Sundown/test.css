@@ -51,3 +51,8 @@ body{
         transform: translate(-10%,-10%);
     }
 }
+
+img{
+    height: 400px;
+    width: 400px;
+}
