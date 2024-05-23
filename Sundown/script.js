@@ -30,3 +30,23 @@ elems.forEach(function(e){
         fixed.style.background = `url(${image})`
     })
 })
+
+var h1s = document.querySelectorAll("#vertical h1")
+var rimg = document.querySelector("#DPE img")
+var ping = document.querySelector("#DPE p")
+h1s.forEach(function(e){
+    e.addEventListener("mouseup", function(){
+        var image = e.getAttribute("data-image")
+        var txt = e.getAttribute("data-txt")
+        rimg.src = image
+        e.style.color = `#EFEAE3`
+        ping.innerHTML = txt
+    })
+})
+
+h1s.forEach(function(e){
+    e.addEventListener("mouseleave", function(){
+        var image = e.getAttribute("data-image")
+        e.style.color = `#504A45`
+    })
+})
