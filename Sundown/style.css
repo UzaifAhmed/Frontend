@@ -378,7 +378,6 @@ nav h3 {
 #fixed-image{
     height: 30vw;
     width: 24vw;
-    background-color: #fe320a;
     border-radius: 18px;
     position: fixed;
     z-index: 99;
@@ -389,9 +388,6 @@ nav h3 {
     background-position: center;
 }
 
-/* #elem-container{
-    padding-bottom: 6vw;
-} */
 #proj-gap{
     padding-bottom: 4vw;
 }
@@ -441,9 +437,37 @@ nav h3 {
 }
 
 #page5{
-    height: 60vh;
+    height: 80vh;
     width: 100%;
     background-color: #efeae3;
+}
+
+.swiper {
+    width: 100%;
+    height: 66%;
+}
+
+.swiper-mySwiper{
+    padding: 8vw 0vw;
+    padding-bottom: 2vw;
+}
+
+.swiper-slide {
+    border-left: 1px solid #bfbbb6;
+    width: 20%;
+    padding: 0 2vw;
+}
+
+.swiper-slide img{
+    /* height: 100%; */
+    width: 10em;
+    display: inline-block;
+    object-fit: cover;
+}
+
+.swiper-slide p{
+    font-weight: 200;
+    padding: 3vh 0;
 }
 
 #page6{
@@ -451,13 +475,6 @@ nav h3 {
     width: 100%;
     /* background-color: #efeae3; */
 }
-
-/* #footer{
-    position: fixed;
-    z-index: 9;
-    height: 60vh;
-    border-top: 0;
-} */
 
 #footer{
     position: fixed;
@@ -489,7 +506,7 @@ nav h3 {
 
 #footer-bottom{
     border-top: 1px solid #504a45;
-    height: 10vh;
+    height: 5vh;
     width: 100%;
 }
 
@@ -637,4 +654,58 @@ nav h3 {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
+}
+
+#footer #gooey-8{
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top right,#fe260a, #fc621a);
+    top: -50px;
+    left: 1050px;
+    animation-name: gooey-footer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+#footer #gooey-9{
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top right,#fe260a, #fc621a);
+    top: 50px;
+    left: 1250px;
+    animation-name: gooey-footer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+#footer #under{
+    /* height: 10vh; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 25px 0;
+}
+
+#under #loc{
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+#under h3{
+    font-weight: 200;
+}
+
+#loc img{
+    padding-right: 5px;
 }
